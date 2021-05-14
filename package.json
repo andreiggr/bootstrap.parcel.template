@@ -1,0 +1,63 @@
+{
+  "name": "new-project",
+  "description": "Description",
+  "license": "GPL",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx parcel serve ./src/apps/index.html",
+    "build": "find ./dist/ -type f ! -iname '*.html' -delete; npx parcel build --public-url ./++resource++new-project.react/ ./src/apps/*.html",
+    "develop": "find ./dist/ -type f ! -iname '*.html' -delete; NODE_ENV=development npx parcel build --public-url ./++resource++new-project.react/ ./src/apps/*.html"
+  },
+  "keywords": [],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "ie 11"
+  ],
+  "dependencies": {
+    "@parcel/transformer-babel": "^2.0.0-alpha.3",
+    "@popperjs/core": "^2.9.2",
+    "apexcharts": "^3.25.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.1",
+    "core-js": "^3.8.3",
+    "corejs": "^1.0.0",
+    "d3-geo": "^2.0.1",
+    "formik": "^2.2.6",
+    "graphql-hooks": "^5.1.1",
+    "history": "^5.0.0",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.7",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-to-print": "^2.12.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.7",
+    "uuid": "^8.3.2",
+    "whatwg-fetch": "^3.5.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
+    "styled-components": "^5.2.1",
+    "autoprefixer": "^10.2.5"
+  }
+}

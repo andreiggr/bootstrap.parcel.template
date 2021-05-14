@@ -1,0 +1,37 @@
+/* plone styles override */
+
+
+html {
+  scroll-padding-top: 150px;
+}
+
+body {
+  margin: 0;
+}
+
+.break-width {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+#main {
+  width: 100% !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.content-header {
+  display: none;
+}
+
+.page-body {
+  padding-top: 0;
+}
+
+/* hide login notification */
+.portalMessage {
+  display: none !important;
+}
+
